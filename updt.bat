@@ -49,7 +49,7 @@ pause
 
 set Sinapse= OK
 echo PROCESSO FINALIZADO
-start ./Sinapse.exe
+start C:\update\Sinapse.exe
 
 
 goto menu
@@ -63,7 +63,7 @@ pause
 set PDV= OK
 IF EXIST C:\ACS\Sintese\PDV (
 echo Pasta existe 
-start ./pdv.exe
+start C:\update\pdv.exe
 goto menu
 pause
 ) ELSE (
@@ -75,7 +75,7 @@ echo ___________________________________________________________________________
 echo """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 pause
 color 2
-start ./pdv.exe
+start C:\update\pdv.exe
 pause
 )
 goto menu
@@ -103,7 +103,7 @@ echo                    VERIFICA ONDE ESTA A PASTA DO GERENTE  - Procure a pasta
 echo ________________________________________________________________________________________________________________________
 echo """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 pause
-start ./gerente.exe
+start C:\update\gerente.exe
 echo ________________________________________________________________________________________________________________________
 echo """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 echo                                       Instalou o requisitos RAPAZ ?
