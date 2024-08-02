@@ -19,6 +19,7 @@ echo 1. Atualizar o Sinapse %Sinapse%
 echo 2. Atualizar o PDV %PDV%
 echo 3. Atualizar o GERENTE %GERENTE%
 echo 4. Atualizar o PDV MOVEL %PDVMOVEL%
+echo 4. Atualizar o Vibra %VIBRA%
 echo 5. Atualizar Expressa 
 echo 0. Sair
 
@@ -134,7 +135,7 @@ pause
 
 set Vibra= OK
 echo PROCESSO FINALIZADO
-start C:\update\Vibra.exe
+start C:\update\Vibra.rar
 
 
 goto menu
@@ -148,6 +149,8 @@ pause
 bitsadmin.exe /transfer gerente /download /priority foreground https://uvs-psi.vercel.app/premia/Gerente.exe "C:\update\gerente.exe"
 pause
 bitsadmin.exe /transfer PdvMovel /download /priority foreground https://uvs-psi.vercel.app/premia/PdvMovel.exe "C:\update\PdvMovel.exe"
+pause
+bitsadmin.exe /transfer Vibra /download /priority foreground http://www.acssoft.com.br/downs/Desktop/ACS_Vibra.rar "C:\update\Vibra.rar"
 pause
 
 set PDV= OK
