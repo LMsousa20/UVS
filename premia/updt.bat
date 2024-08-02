@@ -19,8 +19,8 @@ echo 1. Atualizar o Sinapse %Sinapse%
 echo 2. Atualizar o PDV %PDV%
 echo 3. Atualizar o GERENTE %GERENTE%
 echo 4. Atualizar o PDV MOVEL %PDVMOVEL%
-echo 4. Atualizar o Vibra %VIBRA%
-echo 5. Atualizar Expressa 
+echo 5. Atualização Expressa %Express%
+echo 6. Atualizar o Vibra %VIBRA%
 echo 0. Sair
 
 echo.
