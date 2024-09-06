@@ -19,9 +19,10 @@
 
 
     <nav class="navbar bg-body-tertiary bg-dark mb-3">
-        <div class="container-fluid justify-content-md-center">
+        <div class="container-fluid justify-content-center">
             <a class="navbar-brand" href="#">PAINEL DO SUPORTE - ACS
             </a>
+           
         </div>
     </nav>
     <div class="container justify-content-md-center">
@@ -60,10 +61,19 @@
             </div>
         </div>
         <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx -->
-
-
+        
+        
         <div class="row mb-3 justify-content-md-center p-2">
+       
             <div class="card text-center col-8 p-2">
+                <div class="form-check form-switch" >
+                    <input type="checkbox" id="meuCheckbox">
+                    <label class="form-check-label" for="flexSwitchCheckChecked">TECNICO ACS ? </label>
+                  </div>
+            </div>
+            
+            <div class="card text-center col-8 p-2" id="techSpace"> 
+               
                 <h5 class="card-title">Data Atual</h5>
                 <div class="subdiv move" id="data"></div>
                 <h5 onclick="zeracdg()">Senha Sistema <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -92,6 +102,9 @@
                 </div>
                 <div id="resulteztc"></div> -->
             </div>
+
+
+
         </div>
 
         <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx -->
