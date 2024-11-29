@@ -48,7 +48,7 @@
                             <br>
                             <div class="card text-right" style="width: 18rem;">
                                 <input type="submit" class="btn btn-primary align-items-center"
-                                    value="Abrir Atendimento" />
+                                    value="Abrir Atendimento !" id="btn_ok" onclick="desabilitarBotao()" />
                                 <input type="hidden" name="EntryID" value="1927940688" />
                                 <input type="hidden" name="tracking0" maxlength="64" /> <!-- optional -->
                                 <input type="hidden" name="language" maxlength="5" /> <!-- optional -->
@@ -74,8 +74,14 @@
 </body>
 
 <script>
-
-
+    
+   function desabilitarBotao() {
+        var botao = document.getElementById('btn_ok');
+        botao.disabled = true;  // Desabilita o botão
+        setTimeout(function() {
+            botao.disabled = false;  // Habilita o botão após 3 segundos (3000 ms)
+        }, 3000);
+    }
 
     
 </script>
