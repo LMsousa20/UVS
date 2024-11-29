@@ -1,5 +1,4 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -20,7 +19,7 @@
                     </div>
                     <div class="card-body">
                         <form name="channel1927940688" action="https://secure.logmeinrescue.com/Customer/Download.aspx"
-                            method="post">
+                            method="post" onsubmit="desabilitarBotao()">
                             <table>
                                 <tr>
                                     <td>Informe seu nome: </td>
@@ -48,7 +47,7 @@
                             <br>
                             <div class="card text-right" style="width: 18rem;">
                                 <input type="submit" class="btn btn-primary align-items-center"
-                                    value="Abrir Atendimento !" id="btn_ok" onclick="desabilitarBotao()" />
+                                    value="Abrir Atendimento !" id="btn_ok" />
                                 <input type="hidden" name="EntryID" value="1927940688" />
                                 <input type="hidden" name="tracking0" maxlength="64" /> <!-- optional -->
                                 <input type="hidden" name="language" maxlength="5" /> <!-- optional -->
@@ -71,19 +70,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <script>
+        function desabilitarBotao() {
+            var botao = document.getElementById('btn_ok');
+            botao.disabled = true;  // Desabilita o botão
+            // Depois de 3 segundos, o formulário será enviado
+            setTimeout(function() {
+                // O formulário será enviado automaticamente após o setTimeout
+            }, 3000);
+        }
+    </script>
 </body>
-
-<script>
-    
-   function desabilitarBotao() {
-        var botao = document.getElementById('btn_ok');
-        botao.disabled = true;  // Desabilita o botão
-        setTimeout(function() {
-            botao.disabled = false;  // Habilita o botão após 3 segundos (3000 ms)
-        }, 3000);
-    }
-
-    
-</script>
 
 </html>
